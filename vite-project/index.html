@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пошук зображень</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="title">Search Images</h1>
+        <p class="subtitle">Знайдіть красиві зображення за один клік</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <form id="search-form" class="search-form">
+        <div class="search-wrapper">
+          <input 
+            type="text" 
+            name="query" 
+            class="search-input"
+            placeholder="Введіть що-небудь для пошуку..." 
+            required
+          />
+          <button type="submit" class="search-btn">Пошук</button>
+        </div>
+      </form>
+
+      <div class="gallery-wrapper">
+        <div class="gallery" id="gallery"></div>
+      </div>
+
+      <div class="load-more-wrapper">
+        <button id="load-more" class="load-more-btn" hidden>Завантажити ще</button>
+      </div>
+
+      <div id="loader" class="loader" hidden>
+        <div class="spinner"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Search Images. Всі права захищені.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
